@@ -1,4 +1,5 @@
 import { Header, Form, Label, Input, Button } from "./styled";
+import axios from "axios";
 
 const submitHandler = (e) => {
   e.preventDefault();
@@ -20,7 +21,12 @@ const submitHandler = (e) => {
     console.log('Wrong credentials')
   }
   console.log('Logged in')
-
+  axios.post('http://challenge-react.alkemy.org', {email, password})
+  .then(res => {
+    const token = res.data.token
+    console.log(token)
+  } 
+  )
 
 
 
