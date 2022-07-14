@@ -1,7 +1,24 @@
-const MovieList = () => {
-  return (
-    <h2>MovieList</h2>
-  )
-}
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
-export default MovieList
+const List = () => {
+  const navigate = useNavigate();
+  let token = localStorage.getItem("token");
+
+
+  useEffect(() => {
+    !token && navigate("/", { replace: true })
+  });
+
+
+
+  return (
+    <>
+
+    <h2>Movie List</h2>
+      
+    </>
+  );
+};
+
+export default List;
