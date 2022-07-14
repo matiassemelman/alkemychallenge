@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import Header from "./Header";
 
 const List = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const List = () => {
 
   return (
     <>
-
+    <Header/>
     <h2>Movie List</h2>
       
     </>
