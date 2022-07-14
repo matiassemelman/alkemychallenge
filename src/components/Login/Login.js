@@ -47,6 +47,7 @@ const submitHandler = (e) => {
     .post("http://challenge-react.alkemy.org", { email, password })
     .then((res) => {
       const token = res.data.token;
+      localStorage.setItem('token', token)
       Swal.fire({
         icon: "success",
         timer: 2000,
