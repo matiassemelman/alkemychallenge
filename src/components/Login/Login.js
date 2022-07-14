@@ -65,7 +65,7 @@ export const Login = () => {
           icon: "success",
           timer: 2000,
           timerProgressBar: true,
-          title: `Logged in : ${token}`,
+          title: "Logged in",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
