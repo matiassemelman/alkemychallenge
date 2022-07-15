@@ -1,6 +1,13 @@
 // Components
 
-import { Header, Form, Label, Input, Button } from "./styled";
+import {
+  Header,
+  Form,
+  Label,
+  Input,
+  Button,
+  LoginPageContainer,
+} from "./styled";
 
 // Libraries
 import axios from "axios";
@@ -8,22 +15,19 @@ import Swal from "sweetalert2";
 import "animate.css";
 
 // Hooks
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const navigate = useNavigate();
 
   const submitHandler = (e) => {
-  
-
-
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-  
+
     const emailRegex =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  
+
     if (email === "" || password === "") {
       Swal.fire({
         icon: "error",
@@ -38,7 +42,7 @@ export const Login = () => {
         },
       });
     }
-  
+
     if (email !== "" && !emailRegex.test(email)) {
       Swal.fire({
         icon: "error",
@@ -60,7 +64,7 @@ export const Login = () => {
       .post("http://challenge-react.alkemy.org", { email, password })
       .then((res) => {
         const token = res.data.token;
-        localStorage.setItem('token', token)
+        localStorage.setItem("token", token);
         Swal.fire({
           icon: "success",
           timer: 2000,
@@ -77,14 +81,12 @@ export const Login = () => {
       });
   };
 
-
-
-
   // RENDER ====================================================
   return (
-    <>
-      <Header>Log In</Header>
+    <LoginPageContainer>
       <Form onSubmit={submitHandler}>
+      <Header>Log In</Header>
+
         <Label htmlFor="email">
           Email
           <br />
@@ -100,6 +102,6 @@ export const Login = () => {
         <Button type="submit">Ingresar</Button>
         <Button type="reset">Reset</Button>
       </Form>
-    </>
+    </LoginPageContainer>
   );
 };
