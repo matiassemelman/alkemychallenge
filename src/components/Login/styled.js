@@ -1,16 +1,49 @@
 import styled from "styled-components";
 
-export const LoginPageContainer = styled('div')``
+export const LoginPageContainer = styled("div")`
+  font-size: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
-export const Header = styled('h2')``
+export const Header = styled("h2")``;
 
-export const Form = styled('form')``
+export const Form = styled("form")`
+  max-width: 500px;
+  height: 300px;
+  margin-top: 10vh;
+  padding-inline: 10vw;
+  padding-block: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    120deg,
+    rgba(40, 40, 40, .25),
+    rgba(40, 40, 40, .75), 70%, 
+    rgba(40, 40, 40, .25)
+  );
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    inset 4px 4px 5px 0 rgba(255, 255, 255, .25),
+    inset -4px -4px 5px 0 rgba(0, 0, 0, 0.125),
+    0 0 10px 1px rgba(0, 0, 0, 0.25);
+`;
 
-export const Label = styled('label')``
+export const Label = styled("label")`
+  display: block;
+  text-align: center;
+  line-height: 150%;
+`;
 
-export const Input = styled('input')``
+export const Input = styled("input")`
+  border-radius: 10px;
+  width: 200px;
 
-export const Button = styled('button')``
+`;
 
-
-
+export const Button = styled("button")``;

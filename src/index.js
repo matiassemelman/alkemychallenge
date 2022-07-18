@@ -2,7 +2,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Styling
 import { GlobalStyle } from "./globalStyles";
+import './app.css'
 
 // Components
 import Footer from "./components/Footer/Footer";
