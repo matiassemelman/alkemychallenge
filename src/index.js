@@ -11,7 +11,7 @@ import './app.css'
 import Footer from "./components/Footer/Footer";
 import { Login } from "./components/Login/Login";
 import MovieList from "./components/MovieList/MovieList";
-import { Header } from './components/Login/styled';
+import Header from './components/header/Header'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,7 +22,7 @@ root.render(
       <Route path="/" exact element={<Login />} />
       <Route path="/list" element={<MovieList />} />
     </Routes>
-    {/* <Footer /> */}
+    <Footer />
 
   </BrowserRouter>
 );

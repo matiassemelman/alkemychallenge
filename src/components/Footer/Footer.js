@@ -1,15 +1,17 @@
+import {Foot, Nav, Ul, Li, A} from './styled'
+
 const Footer = () => {
   return (
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="www.google.com.ar" target="_blank" rel="noreferrer noopener" >Instagram</a></li>
-                <li><a href="www.google.com.ar" target="_blank" rel="noreferrer noopener">Linkedin</a></li>
-                <li><a href="www.google.com.ar" target="_blank" rel="noreferrer noopener">Github</a></li>
-            </ul>
+    <Foot>
+        <Nav>
+            <Ul>
+                <Li><A href="www.google.com.ar" target="_blank" rel="noreferrer noopener" >Instagram</A></Li>
+                <Li><A href="www.google.com.ar" target="_blank" rel="noreferrer noopener">Linkedin</A></Li>
+                <Li><A href="www.google.com.ar" target="_blank" rel="noreferrer noopener">Github</A></Li>
+            </Ul>
             <p>Copyright Matias Semelman 2022</p>
-        </nav>
-    </footer>
+        </Nav>
+    </Foot>
   )
 }
 
