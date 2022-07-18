@@ -15,7 +15,8 @@ display: flex`
 
 export const Ul = styled('ul')`
 display: flex;
-padding-right: 1em;
+padding-left: 4em;
+padding-right: 15vw;
 list-style: none;
 `
 
@@ -24,7 +25,7 @@ padding-right: 1em;
 `
 
 export const A = styled('a')`
-color: rgb(255, 255, 255);
+color: rgb(200, 200, 200);
 text-decoration: none;
 `
 
