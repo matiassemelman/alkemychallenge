@@ -16,7 +16,7 @@ display: flex`
 export const Ul = styled('ul')`
 display: flex;
 padding-left: 4em;
-padding-right: 15vw;
+padding-right: 15 vw;
 list-style: none;
 `
 
