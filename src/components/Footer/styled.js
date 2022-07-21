@@ -5,9 +5,6 @@ display: flex;
 padding-block: 1em;
 padding-left: 4em;
 background-color: black;
-position:absolute;
-   bottom:0;
-   width:95.3vw;
 `
 
 export const Nav = styled('nav')`

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
+import {CardsGrid, Card} from './styled'
 
 const List = () => {
   const navigate = useNavigate();
@@ -14,10 +15,12 @@ const List = () => {
 
 
   return (
-    <>
-    <h2>Movie List</h2>
+    <CardsGrid>
+    <Card/>
+    <Card/>
+
       
-    </>
+    </CardsGrid>
   );
 };
 

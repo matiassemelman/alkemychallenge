@@ -17,10 +17,12 @@ function App() {
     <>
     <GlobalStyle />
     <Header />
+    <main>
     <Routes>
       <Route path="/" exact element={<Login />} />
       <Route path="/list" element={<MovieList />} />
     </Routes>
+    </main>
     <Footer />
     </>
   );

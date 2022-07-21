@@ -5,7 +5,8 @@ export const Nav = styled('nav')`
 display: flex;
 padding-block: 1em;
 padding-left: 4em;
-background-color: black`
+background-color: black;
+height: 100%`
 
 export const StyledLink = styled(Link)`
 color: rgb(200, 200, 200);
