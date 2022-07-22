@@ -1,7 +1,7 @@
 // Components
-import Footer from "./components/Footer/Footer";
-import { Login } from "./components/Login/Login";
-import MovieList from "./components/MovieList/MovieList";
+import Footer from "./components/footer/Footer";
+import { Login } from "./components/login/Login";
+import MovieList from "./components/movieList/MovieList";
 import Header from './components/header/Header'
 
 // Styles
