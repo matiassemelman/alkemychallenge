@@ -99,7 +99,9 @@ export const Login = () => {
           <Input type="password" name="password" id="password" />
         </Label>
         <br />
-        <Button type="submit">Ingresar</Button>
+        <Button type="submit" green>Ingresar</Button>
+        <Button type="reset" blue>Reset</Button>
+
       </Form>
     </LoginPageContainer>
   );
