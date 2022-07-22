@@ -100,7 +100,7 @@ export const Login = () => {
         </Label>
         <br />
         <Button type="submit" green>Ingresar</Button>
-        <Button type="reset" blue>Reset</Button>
+        <Button type="reset" >Reset</Button>
 
       </Form>
     </LoginPageContainer>

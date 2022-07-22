@@ -58,14 +58,8 @@ export const Button = styled("button")`
   ${(props) =>
     props.green &&
     css`
-      background-color: green;
+      background-color: teal;
     `
    }
-    ${(props) =>
-    props.blue &&
-    css`
-      background-color: blue;
-     
-    `
-   }
+ 
 `;
