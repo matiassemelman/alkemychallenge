@@ -5,7 +5,7 @@
 }
 
 :root {
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -13,8 +13,9 @@ header {
     margin-bottom: 2em;
     }
 
-main, body {
-    height: 78.5vh
+main {
+    height: fit-content;
+    max-width: 100vw;
 }
 
 
