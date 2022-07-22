@@ -7,9 +7,6 @@ padding-left: 4em;
 background-color: black;
 `
 
-export const Nav = styled('nav')`
-display: flex`
-
 export const Ul = styled('ul')`
 display: flex;
 padding-left: 4em;
@@ -25,7 +22,5 @@ export const A = styled('a')`
 color: rgb(200, 200, 200);
 text-decoration: none;
 `
-
-export const P = styled('p')``
 
 
